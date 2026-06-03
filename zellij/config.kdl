@@ -1,0 +1,16 @@
+default_mode "locked"
+scrollback_editor "/usr/bin/hx"
+
+keybinds clear-defaults=false {
+    shared {
+        bind "Alt h" { MoveFocus "left"; }
+        bind "Alt l" { MoveFocus "right"; }
+        bind "Alt k" { MoveFocus "up"; }
+        bind "Alt j" { MoveFocus "down"; }
+
+        bind "Ctrl tab" { FocusNextPane; }
+
+        bind "Alt n" { NewPane; }
+        bind "Alt f" { ToggleFloatingPanes; }
+    }
+}

@@ -1,0 +1,8 @@
+inherits = "sonokai"
+
+"keyword" = { fg = "red", modifiers = ["bold"] }
+"ui.cursor" = { fg = "cyan", modifiers = ['reversed'] }
+"ui.virtual.jump-label" = { fg = "black", bg = "yellow", modifiers = ["bold"] }
+
+[palette]
+bg0 = "#322a2d"

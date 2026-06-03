@@ -1,0 +1,41 @@
+theme = "sonokai_mod"
+
+[editor]
+bufferline = "always"
+color-modes = true
+mouse = false
+end-of-line-diagnostics = "hint"
+rulers = [100]
+
+[editor.statusline]
+center = ["version-control"]
+
+[editor.lsp]
+display-progress-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+C-a = ":write"
+C-x = ":buffer-close"
+C-A-a = "increment"
+C-A-z = "decrement"
+C-k = "goto_previous_buffer"
+C-j = "goto_next_buffer"
+"esc" = "collapse_selection"
+
+[keys.insert]
+C-a = ["normal_mode", ":write"]
+
+[keys.normal."-"]
+d = ":reset-diff-change"
+f = ":reflow 100"
+h = ":toggle lsp.display-inlay-hints"
+i = ":pipe sort"
+l = ":lsp-restart"
+r = ":reload-all"
+s = ":toggle-option soft-wrap.enable"
+p = ":sh git add ."
