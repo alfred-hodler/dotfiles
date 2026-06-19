@@ -4,5 +4,11 @@ name = "rust"
 [config]
 imports.granularity.enforce = true
 imports.granularity.group = "module"
-imports.prefix = "crate"
+imports.prefix = "self"
+
+[[language]]
+name = "markdown"
+file-types = ["md", "txt"] # also apply to plain text files
+soft-wrap.enable = true
+soft-wrap.wrap-at-text-width = true
 
